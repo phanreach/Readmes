@@ -20,16 +20,15 @@ Each player have only 6 attempts to guess it wrong , if the limit of wrong guess
     3. In the code also have two variable called name(String) , score(int)
     4. Constructor: initialize the name and score properties of the guest player object.
     5. Getter and setter method:
-        1. getName() and getScore() are getter method to retrieve the name and score of the guest player.
-        2. setName(String name) and setScore(int score) are setter method to set the name and score of the guest player
+        1. getName() are getter method to retrieve the name of the guest player.
+        2. setName(String name) are setter method to set the name of the guest player
         3. These methods provide access to the private properties of the guest player object. 
-    6. incrementScore(int points) : This method allows the guest player to increase their score by a specified number of points .
     7. rule() : Display the rule of the game .
     8. performGame(GameLogic gameLogic) : This method takes an object implementing the GameLogic interface and calls its play() method. it allow the guest player to perform a game using a specific game logic.
     9. abstract void playGame() : This is an abstract method that must be implemented by subclasses of GuestPlayer .
 2. RegisterPlayer(Sub Class) :
     1. public class RegisterPlayer extends GuesPlayer : declare the RegisterPlayer class as a subclass of GuestPlayer.
-    2. public RegisterPlayer(String name, int score): This is the constructor of the RegisterPlayer class. It calls the constructor of the superclass (GuestPlayer) using the super(name, score) statement.
+    2. public RegisterPlayer(String name): This is the constructor of the RegisterPlayer class. It calls the constructor of the superclass (GuestPlayer) using the super(name) statement.
     3. @Override annotation : indicates that the following method is meant to override a method inherited from the superclass.
     4. public void rule() :
         1. This is the overridden rule() method of the RegisterPlayer class. It overrides the rule() method defined in the GuestPlayer class.
