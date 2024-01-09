@@ -2,8 +2,9 @@
 ## Introduction
 Hangman is a classic guessing game that challenges players to decipher a hidden word by guessing individual letters within a limited number of attempts.
 The game typically consists of a gallows, a dash representing the letters of the word, and a stick figure that gradually takes shape as incorrect guesses are made. 
-## Object-Oriented Features 
+## Implementation 
 ### Class & Object 
+The file 
 - Authentication : Login and Register
 - User : 
 - Register : 
