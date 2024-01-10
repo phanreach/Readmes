@@ -4,15 +4,15 @@ Hangman is a classic guessing game that challenges players to decipher a hidden 
 The game typically consists of a gallows, a dash representing the letters of the word, and a stick figure that gradually takes shape as incorrect guesses are made. 
 ## How does it process?
 Players have two choices to play as a registered player or a guest player.
-If the player chooses to play as a registered player, their score and name will be saved in a file, but guest players will not.
+If the player chooses to play as a registered player, their name will be saved in a file, but guest players will not.
 The word is represented by a dash, with each space corresponding to a letter in the word. 
 The player must make letter guesses one at a time, aiming to uncover the hidden word.
 Each incorrect guess, a body part of the hangman is drawn on the gallows.
 Each player have only 6 attempts to guess it wrong , if the limit of wrong guessing is reach , player lose the game.
 ## Function 
-1. Word selection an randomization: Once the player selects their player type, a random word will be retrieved from a list of words from an external text file (hangmanword.ext) and displayed with dashes representing the number of characters to be guessed.
+1. Word selection an randomization: Once the player selects their player type, a random word will be retrieved from a list of words from an external text file (dictionary.txt) and displayed with dashes representing the number of characters to be guessed.
 2. User Authentication: If player choose to plas as registered player, they are prompted to enter email , username and password, and the authentication class authenticate them by reading them from the data.txt file.
-3. Guessing: The player begins guessing one character at a time. If the guess is correct, the dash will be replaced by a letter, and the player continues guessing the remaining letter, or they can guess all letters at the same time. If the player guesses all right, it will display the score and message "You win!" but if they lose or reach the limit of six attempts, it will show the full hangman body.
+3. Guessing: The player begins guessing one character at a time. If the guess is correct, the dash will be replaced by a letter, and the player continues guessing the remaining letter, or they can guess all letters at the same time. If the player guesses all right, it will display the message "You win!" but if they lose or reach the limit of six attempts, it will show the full hangman body and the correct word.
 ## Implementation  
 ### Class & Object 
 - Authentication : Use for Login
