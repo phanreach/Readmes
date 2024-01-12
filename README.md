@@ -9,12 +9,13 @@ The word is represented by a dash, with each space corresponding to a letter in 
 The player must make letter guesses one at a time, aiming to uncover the hidden word.
 Each incorrect guess, a body part of the hangman is drawn on the gallows.
 Each player have only 6 attempts to guess it wrong , if the limit of wrong guessing is reach , player lose the game.
-## Function 
+## Feature 
 1. Word selection an randomization: Once the player selects their player type, a random word will be retrieved from a list of words from an external text file (dictionary.txt) and displayed with dashes representing the number of characters to be guessed.
 2. User Authentication: If player choose to plas as registered player, they are prompted to enter email , username and password, and the authentication class authenticate them by reading them from the data.txt file.
 3. Guessing: The player begins guessing one character at a time. If the guess is correct, the dash will be replaced by a letter, and the player continues guessing the remaining letter, or they can guess all letters at the same time. If the player guesses all right, it will display the message "You win!" but if they lose or reach the limit of six attempts, it will show the full hangman body and the correct word.
 ## Implementation  
 ### Class & Object 
+We have a total of 6 class
 - Authentication : Use for Login
 - User : It has a constructor to initialize these fields, getter methods to access them, and an overridden toString method that generates a string representation mentioning the username and password.
 - Register : Register new player
